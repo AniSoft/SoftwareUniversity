@@ -1,0 +1,30 @@
+//Problem 3. Comparing Floats
+//Write a program that safely compares floating-point numbers with precision eps = 0.000001.
+//Note that we cannot directly compare two floating-point numbers a and b by a==b because of the nature of the floating-point arithmetic.
+//Therefore, we assume two numbers are equal if they are more closely to each other than a fixed constant eps.
+ 
+using System;
+ 
+class ComparingFloats
+{
+    static void Main()
+    {
+        decimal firstNumber;
+        decimal secondNumber;
+        Console.WriteLine("Enter the first Decimal number :");
+        firstNumber = decimal.Parse(Console.ReadLine());
+        Console.WriteLine("Enter the second Decimal number :");
+        secondNumber = decimal.Parse(Console.ReadLine());
+        //Compare First and Second Number with precision eps=0.000001
+        bool compare = (Math.Abs(firstNumber - secondNumber) < 0.000001m);
+        if (compare)
+        {
+            Console.WriteLine("The numbers {0} and {1} are equal.", firstNumber, secondNumber);
+        }
+        else
+        {
+            Console.WriteLine("The number {0} and {1} are not equal.", firstNumber, secondNumber);
+        }
+    }
+}
+
