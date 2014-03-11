@@ -1,0 +1,29 @@
+//Problem 1.    Declare Variables
+//Declare five variables choosing for each of them the most appropriate of the types byte, sbyte, short, ushort, int, uint, long, ulong to represent the following values: 52130, -115, 4825932, 97, -10000. Choose a large enough type for each number to ensure it will fit in it. Try to compile the code.
+ 
+using System;
+ 
+class DeclareVariables
+{
+    static void Main()
+    {
+        //Declare variables
+        //ushort (0 to 65,535): unsigned 16-bit
+        ushort valueA = 52130;
+        //sbyte (-128 to 127): signed 8-bit
+        sbyte valueB = -115;
+        //uint (0 to 4,294,967,295): unsigned 32-bit
+        uint valueC = 4825932;
+        //byte (0 to 255): unsigned 8-bit
+        byte valueD = 97;
+        //short (-32,768 to 32,767): signed 16-bit
+        short valueE = -10000;
+        //Print to Console
+        Console.WriteLine("Type ushort {0}", valueA);
+        Console.WriteLine("Type sbyte {0}", valueB);
+        Console.WriteLine("Type uint {0}", valueC);
+        Console.WriteLine("Type byte {0}", valueD);
+        Console.WriteLine("Type short {0}", valueE);
+    }
+}
+
