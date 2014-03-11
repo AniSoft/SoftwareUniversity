@@ -11,4 +11,3 @@ class PrintMyName
         Console.WriteLine("My name is Satoshi.");
     }
 }
-
