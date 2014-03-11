@@ -1,0 +1,27 @@
+//Problem 16.* Print Long Sequence
+//Write a program that prints the first 1000 members of the sequence: 2, -3, 4, -5, 6, -7, …
+//You might need to learn how to use loops in C# (search in Internet).
+ 
+using System;
+ 
+class PrintLongSequence
+{
+    static void Main()
+    {
+        Console.WriteLine("The First 1000 members of sequence: 2,-3,4,-5,6,-7,...are:");
+        // use for loop  to show first 10 members of sequence  
+        for (int i = 2; i < 1002; i++)
+        {
+            // if-else statement to Check even elements
+            if (i % 2 == 0)
+            {
+                //Print to Console positive even elements
+                Console.WriteLine(i);
+            }
+            else
+                //Print to Console negative odd elements
+                Console.WriteLine(-i);
+        }
+    }
+}
+
