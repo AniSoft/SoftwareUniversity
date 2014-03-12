@@ -1,0 +1,38 @@
+//Problem 9.Isosceles Triangle - VARIANT
+//Write a program that prints an isosceles triangle of 9 copyright symbols ©, something like this:
+//Note that the © symbol may be displayed incorrectly at the console so you may need to change the console character encoding to UTF-8 and the console font.
+ 
+using System;
+using System.Text;
+ 
+class IsoscelesTriangleVariant
+{
+    static void Main()
+    {
+        Console.OutputEncoding = Encoding.UTF8;
+        char copyright = '\u00a9';
+        int lenghtTriangle = 7;
+        int space = 1;
+        //Top Triangle
+        string topTriangle = new string(' ',lenghtTriangle/2);
+        Console.Write(topTriangle);
+        Console.WriteLine(copyright);
+        //Center Triangle
+        for (int i = 1; i <= 2; i++)
+        {
+            string centerTriangle=new string (' ',lenghtTriangle/2-i);
+            Console.Write(centerTriangle);
+            Console.Write(copyright);
+            Console.Write(new string(' ',space));
+            Console.WriteLine(copyright);
+            space +=2;
+        }
+        //Bottom Triangle
+        for (int i = 0; i < lenghtTriangle/2+1; i++)
+        {
+            Console.Write(copyright);
+            Console.Write(' ');
+        }
+        Console.WriteLine();
+    }
+}
