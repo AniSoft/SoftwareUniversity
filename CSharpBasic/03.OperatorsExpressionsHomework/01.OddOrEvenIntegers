@@ -1,0 +1,31 @@
+//Problem 1.Odd or Even Integers
+//Write an expression that checks if given integer is odd or even.
+
+using System;
+
+class OddOrEvenIntegers
+{
+    static void Main()
+    {
+        int number;
+        Console.Write("Please, enter some number:");
+        bool checkNumber = int.TryParse(Console.ReadLine(), out number);
+        if (checkNumber == true)
+        {
+            // Check for Even type 
+            bool oddOrEven = (number % 2 == 0);
+            if (oddOrEven)
+            {
+                Console.WriteLine("Is the number {0} Odd ? {1}, the number {0} is Even!", number, !oddOrEven);
+            }
+            else
+            {
+                Console.WriteLine("Is the number {0} Odd ? {1}, the number {0} is Odd!", number, !oddOrEven);
+            }
+        }
+        else
+        {
+            Console.WriteLine("You enter wrong number! Please, try again!");
+        }
+    }
+}
