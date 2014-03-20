@@ -1,0 +1,31 @@
+//Problem 7.	Point in a Circle
+//Write an expression that checks if given point (x,  y) is inside a circle K({0, 0}, 2).
+
+using System;
+
+class PointInCircle
+{
+    static void Main()
+    {
+        Console.WriteLine("Is point (x,y) inside a circle K((0,0),2) ? ");
+        //Enter x
+        Console.Write("Please, Enter point(x,y):  x=");
+        double x = double.Parse(Console.ReadLine());
+        //Enter y
+        Console.Write("Please, Enter point(x,y):  y=");
+        double y = double.Parse(Console.ReadLine());
+        int radiusCircle = 2;
+        //Calculate the distance from center of circle(0,0) to the point(x,y)
+        double pointDistance = Math.Sqrt((x*x)+(y*y));
+        //Check the point(x,y)
+        bool checkPoint=(pointDistance <= radiusCircle);
+        if (checkPoint)
+        {
+            Console.WriteLine("{0}.The Point({1},{2}) is inside a circle K((0,0),2).",checkPoint,x,y);
+        }
+        else
+        {
+            Console.WriteLine("{0}.The Point({1},{2}) is outside a circle K((0,0),2).",checkPoint, x, y);
+        }
+    }
+}
