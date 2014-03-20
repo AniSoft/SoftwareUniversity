@@ -1,0 +1,23 @@
+//Problem 5.	Third Digit is 7?
+//Write an expression that checks for given integer if its third digit from right-to-left is 7.
+
+using System;
+
+class ThirdDigitIs7
+{
+    static void Main()
+    {
+        Console.Write("Please enter some number:");
+        int number = int.Parse(Console.ReadLine());
+        int thirdDigit = (number / 100) % 10;
+        Console.WriteLine("The third digit is:{0}",thirdDigit);
+        if (thirdDigit == 7)
+        {
+            Console.WriteLine("The third digit of number {0} is 7.", number);
+        }
+        else
+        {
+            Console.WriteLine("The third digit of number {0} is not 7.", number,thirdDigit);
+        }
+    }
+}
