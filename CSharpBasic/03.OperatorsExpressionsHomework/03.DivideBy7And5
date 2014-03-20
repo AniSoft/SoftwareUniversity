@@ -1,0 +1,21 @@
+//Problem 3. Divide by 7 and 5
+//Write a Boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.
+
+using System;
+
+class DivideBy7And5
+{
+    static void Main()
+    {
+        Console.Write("Please, enter some number:");
+        int myNumber = int.Parse(Console.ReadLine());
+        if (myNumber % 5 == 0 && myNumber % 7 == 0)
+        {
+            Console.WriteLine("The number {0}, can be divided by 5 and 7.", myNumber);
+        }
+        else
+        {
+            Console.WriteLine("The number {0}, cannot be divided by 5 and 7.", myNumber);
+        }
+    }
+}
