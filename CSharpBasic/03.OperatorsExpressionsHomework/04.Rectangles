@@ -1,0 +1,18 @@
+//Problem 4.	Rectangles
+//Write an expression that calculates rectangle’s perimeter and area by given width and height. 
+using System;
+
+class Rectangles
+{
+    static void Main()
+    {
+        Console.Write("Please, enter rectangle's width: ");
+        double widthRectangle = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter rectangle's height:");
+        double heightRectangle = double.Parse(Console.ReadLine());
+        double perimeterRectangle=2*(widthRectangle+heightRectangle);
+        double areaRectangle = widthRectangle * heightRectangle;
+        Console.WriteLine("Rectangle's perimeter is {0}.",perimeterRectangle);
+        Console.WriteLine("Rectangle's area is {0}.", areaRectangle);
+    }
+}
