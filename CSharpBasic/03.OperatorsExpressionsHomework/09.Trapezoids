@@ -1,0 +1,20 @@
+//Problem 9.Trapezoids
+//Write an expression that calculates trapezoid's area by given sides a and b and height h.
+
+using System;
+
+class Trapezoids
+{
+    static void Main()
+    {
+        Console.Write("Please,enter side a=");
+        double aSide = double.Parse(Console.ReadLine());
+        Console.Write("Please,enter side b=");
+        double bSide = double.Parse(Console.ReadLine());
+        Console.Write("Please,enter height h=");
+        double hHeight = double.Parse(Console.ReadLine());
+        //Calculate Area of Trapezoid
+        double areaTrapezoid = ((aSide + bSide) / 2) * hHeight;
+        Console.WriteLine("Trapezoid's area: {0}.",areaTrapezoid);
+    }
+}
