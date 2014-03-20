@@ -1,0 +1,68 @@
+//Problem 6.	Four-Digit Number
+//Write a program that takes as input a four-digit number in format abcd (e.g. 2011) and performs the following:
+//Calculates the sum of the digits (in our example 2+0+1+1 = 4).
+//Prints on the console the number in reversed order: dcba (in our example 1102).
+//Puts the last digit in the first position: dabc (in our example 1201).
+//Exchanges the second and the third digits: acbd (in our example 2101).
+//The number has always exactly 4 digits and cannot start with 0.
+
+using System;
+
+class FourDigitNumber
+{
+    static void Main()
+    {
+        Console.Write("Please enter a four-digit number in format abcd:");
+        string myString = Console.ReadLine();
+        int stringLenght = myString.Length;
+        //Check the lenght of string
+        if (stringLenght == 4)
+        {
+            char a = myString[0];
+            char b = myString[1];
+            char c = myString[2];
+            char d = myString[3];
+
+            Console.WriteLine("a={0}", a);
+            Console.WriteLine("b={0}", b);
+            Console.WriteLine("c={0}", c);
+            Console.WriteLine("d={0}", d);
+
+            int firstDigit = Convert.ToInt32(new string(a, 1));
+            Console.WriteLine("First digit is {0}.", firstDigit);
+            //Check the first digit of the number
+            if (firstDigit != 0)
+            {
+                //Sum of digits
+                int sumDigits = (int)Char.GetNumericValue(a) + (int)Char.GetNumericValue(b) +
+                    (int)Char.GetNumericValue(c) + (int)Char.GetNumericValue(d);
+                Console.WriteLine("The Sum of the digits:{0}", sumDigits);
+
+                //Reverse number
+                int newLenghtString = stringLenght - 1;
+                Console.Write("The reverse number in format dcba:");
+                while (newLenghtString >= 0)
+                {
+                    string reverseString = "" + myString[newLenghtString];
+                    newLenghtString--;
+                    Console.Write("{0}", reverseString);
+                }
+                Console.WriteLine();
+                //String in order dabc
+                string lastToFirst = d.ToString() + a.ToString() + b.ToString() + c.ToString();
+                Console.WriteLine("The number in format dabc:{0}", lastToFirst);
+                //String in order acbd
+                string secondToThird = a.ToString() + c.ToString() + b.ToString() + d.ToString();
+                Console.WriteLine("The number in format acbd:{0}", secondToThird);
+            }
+            else
+            {
+                Console.WriteLine("The number cannot start with 0. Please, enter again 4 digits number.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("The number must be exactly 4 digits. Please, enter again 4 digits number.");
+        }
+    }
+}
