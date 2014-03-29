@@ -1,0 +1,33 @@
+//Problem 5.	The Biggest of 3 Numbers
+//Write a program that finds the biggest of three numbers.
+
+using System;
+
+class TheBiggestOf3Numbers
+{
+    static void Main()
+    {
+        Console.Write("Please, enter a:");
+        double a = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter b:");
+        double b = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter c:");
+        double c = double.Parse(Console.ReadLine());
+        double biggestNumber;
+        if (a > b && a > c)
+        {
+            biggestNumber = a;
+            Console.WriteLine("The biggest number from {0} , {1} and {2} is {3}.", a, b, c, biggestNumber);
+        }
+        else if (b > a && b > c)
+        {
+            biggestNumber = b;
+            Console.WriteLine("The biggest number from {0} , {1} and {2} is {3}.", a, b, c, biggestNumber);
+        }
+        else
+        {
+            biggestNumber = c;
+            Console.WriteLine("The biggest number from {0} , {1} and {2} is {3}.", a, b, c, biggestNumber);
+        }
+    }
+}
