@@ -1,0 +1,17 @@
+//Problem 4. Number Comparer
+//Write a program that gets two numbers from the console and prints the greater of them. Try to implement this without if statements.
+
+using System;
+
+class NumberComparer
+{
+    static void Main()
+    {
+        Console.Write("Please, enter First number:");
+        double firstNumber = double.Parse(Console.ReadLine());        
+        Console.Write("Please, enter Second number:");
+        double secondNumber = double.Parse(Console.ReadLine());
+        Console.Write("The Greater number from {0} and {1} is:",firstNumber,secondNumber);
+        Console.WriteLine(Math.Max(firstNumber,secondNumber));
+    }
+}
