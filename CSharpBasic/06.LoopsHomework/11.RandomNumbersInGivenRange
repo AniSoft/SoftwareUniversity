@@ -1,0 +1,30 @@
+//Problem 11.	Random Numbers in Given Range
+//Write a program that enters 3 integers n, min and max (min ≤ max) and prints n random numbers in the range [min...max].
+
+using System;
+
+class RandomNumbersInGivenRange
+{
+    static void Main()
+    {
+        Console.Write("Please, enter n= ");
+        int n = int.Parse(Console.ReadLine());
+
+        Console.Write("Please, enter min= ");
+        int minNumber = int.Parse(Console.ReadLine());
+
+        Console.Write("Please, enter max= ");
+        int maxNumber = int.Parse(Console.ReadLine());
+
+        if (minNumber <= maxNumber)
+        {
+            Random random = new Random();
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(random.Next(minNumber, maxNumber + 1) + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
