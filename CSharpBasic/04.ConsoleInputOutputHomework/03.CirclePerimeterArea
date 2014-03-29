@@ -1,0 +1,19 @@
+//Problem 3.Circle Perimeter and Area
+//Write a program that reads the radius r of a circle and prints its perimeter and area formatted with 2 digits after the decimal point.
+
+using System;
+
+class CirclePerimeterArea
+{
+    static void Main()
+    {
+        Console.Write("Please,enter radius of a circle r: ");
+        double radiusCircle=double.Parse(Console.ReadLine());
+        //Perimeter of Circle
+        double perimeterCircle = 2 *Math.PI* radiusCircle;
+        Console.WriteLine("The Perimeter of Circle is {0:F2}.", perimeterCircle);
+        //Area of Circle
+        double areaCircle = Math.PI * radiusCircle * radiusCircle;
+        Console.WriteLine("The Area of Circle is {0:F2}.",areaCircle);
+    }
+}
