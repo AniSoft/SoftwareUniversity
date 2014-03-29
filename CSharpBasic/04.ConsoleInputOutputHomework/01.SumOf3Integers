@@ -1,0 +1,20 @@
+//Problem 1. Sum of 3 Integers
+//Write a program that reads 3 integer numbers from the console and prints their sum.
+
+using System;
+
+class SumOf3Integers
+{
+    static void Main()
+    {
+        Console.Write("Please,enter number a: ");
+        double a = double.Parse(Console.ReadLine());
+        Console.Write("Please,enter number b: ");
+        double b = double.Parse(Console.ReadLine());
+        Console.Write("Please,enter number c: ");
+        double c = double.Parse(Console.ReadLine());
+        //Calculate the sum 
+        double sum = a + b + c;
+        Console.WriteLine("The result: {0}+{1}+{2}={3}",a,b,c,sum);
+    }
+}
