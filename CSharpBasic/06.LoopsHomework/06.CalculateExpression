@@ -1,0 +1,30 @@
+//Problem 6. Calculate N! / K!
+//Write a program that calculates n! / k! for given n and k (1 < k < n < 100). 
+//Use only one loop. 
+
+using System;
+using System.Numerics;
+class CalculateExpression
+{
+    static BigInteger FactorialCalc(uint number)
+    {
+        BigInteger sum = 1;
+        for (int i = 1; i <= number; i++)
+        {
+            sum = sum * i;
+        }
+        return sum;
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("Calculate N!/K!");
+        Console.Write("Enter N:");
+        uint n = uint.Parse(Console.ReadLine());
+        Console.Write("Enter K:");
+        uint k = uint.Parse(Console.ReadLine());
+        BigInteger result = FactorialCalc(n) / FactorialCalc(k);
+        Console.Write("The Result is:{0}",result);
+        Console.WriteLine();
+    }
+}
