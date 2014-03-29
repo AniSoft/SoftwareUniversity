@@ -1,0 +1,30 @@
+//Problem 5. Calculate 1 + 1!/X + 2!/X2 + … + N!/XN
+//Write a program that, for a given two integer numbers n and x, calculates the sum S = 1 + 1!/x + 2!/x2 + … + n!/xn. Use only one loop. Print the result with 5 digits after the decimal point.
+
+using System;
+class Calculate
+{
+    static ulong FactorialCalc(uint number)
+    {
+        ulong sum = 1;
+        for (uint i = 1; i <= number; i++)
+        {
+            sum = sum * i;
+        }
+        return sum;
+    }
+
+    static void Main()
+    {
+        Console.Write("Please, enter X:");
+        double x = int.Parse(Console.ReadLine());
+        Console.Write("Please, enter N:");
+        double n = int.Parse(Console.ReadLine());
+        double theSum = 1;
+        for (uint i = 1; i <= n; i++)
+        {
+            theSum = theSum + (FactorialCalc(i) / Math.Pow(x, i));
+        }
+        Console.WriteLine("S=1+1!/X+2!/X2+...+N!/XN = {0}",theSum);
+    }
+}
