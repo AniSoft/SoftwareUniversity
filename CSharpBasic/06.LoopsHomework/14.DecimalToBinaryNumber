@@ -1,0 +1,24 @@
+//Problem 14. Decimal to Binary Number
+//Using loops write a program that converts an integer number to its binary representation. The input is entered as long. The output should be a variable of type string. Do not use the built-in .NET functionality. 
+
+using System;
+
+class DecimalToBinaryNumber
+{
+    static void Main()
+    {
+        Console.Write("Enter decimal number: ");
+        long decimalNumber = long.Parse(Console.ReadLine());
+
+        long remainder;
+        string binaryNumber = string.Empty;
+
+        while (decimalNumber > 0)
+        {
+            remainder = decimalNumber % 2;
+            decimalNumber /= 2;
+            binaryNumber = remainder.ToString() + binaryNumber;
+        }
+        Console.WriteLine(binaryNumber);
+    }
+}
