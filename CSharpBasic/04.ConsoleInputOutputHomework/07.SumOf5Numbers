@@ -1,0 +1,25 @@
+//Problem 7.	Sum of 5 Numbers
+//Write a program that enters 5 numbers (given in a single line, separated by a space), calculates and prints their sum. 
+
+using System;
+
+class SumOf5Numbers
+{
+    static void Main()
+    {
+        //Enter input 
+        Console.Write("Please, enter First number:");
+        double firstNumber = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter Second number:");
+        double secondNumber = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter Third number:");
+        double thirdNumber = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter Fourth number:");
+        double fourthNumber = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter Fifth number:");
+        double fifthNumber = double.Parse(Console.ReadLine());
+        //Calsulate the sum
+        double sumNumber = firstNumber + secondNumber + thirdNumber + fourthNumber + fifthNumber;
+        Console.WriteLine(firstNumber+" "+secondNumber+" "+thirdNumber+" "+fourthNumber+" "+fifthNumber+" "+sumNumber);
+    }
+}
