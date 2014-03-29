@@ -1,0 +1,36 @@
+//A company has name, address, phone number, fax number, web site and manager. The manager has first name, last name, age and a phone number. Write a program that reads the information about a company and its manager and prints it back on the console.
+using System;
+
+class PrintCompanyInformation
+{
+    static void Main()
+    {
+        Console.Write("Please, enter the company name:");
+        string companyName = Console.ReadLine();
+        Console.Write("Please, enter the address:");
+        string address = Console.ReadLine();
+        Console.Write("Please, enter the Phone number:");
+        string phoneNumber = Console.ReadLine();
+        Console.Write("Please, enter the FAX number:");
+        string faxNumber = Console.ReadLine();
+        Console.Write("Please, enter the website:");
+        string webSite = Console.ReadLine();
+        Console.Write("Please, enter the Manager First Name:");
+        string managerFirstName = Console.ReadLine();
+        Console.Write("Please, enter the Manager Second Name:");
+        string managerLastName = Console.ReadLine();
+        Console.Write("Please, enter the Manager Age:");
+        sbyte managerAge = sbyte.Parse(Console.ReadLine());
+        Console.Write("Please, enter the Manager Phone number:");
+        string managerPhoneNumber = Console.ReadLine();
+        Console.WriteLine("The company name: {0}", companyName);
+        Console.WriteLine("Address:{0}", address);
+        Console.WriteLine("Phone number:{0}", phoneNumber);
+        Console.WriteLine("Fax number:{0}", faxNumber);
+        Console.WriteLine("Web site:{0}", webSite);
+        Console.WriteLine("Manager First Name:{0}", managerFirstName);
+        Console.WriteLine("Manager Last Name:{0}", managerLastName);
+        Console.WriteLine("Manager Age:{0}", managerAge);
+        Console.WriteLine("Manager Phone Number:{0}", managerPhoneNumber);
+    }
+}
