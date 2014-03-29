@@ -1,0 +1,30 @@
+//Problem 13. Check a Bit at Given Position
+//Write a Boolean expression that returns if the bit at position p (counting from 0, starting from the right) in given integer number n has value of 1.
+
+using System;
+
+class CheckBitGivenPosition
+{
+    static void Main()
+    {
+        Console.Write("Please, enter some number:");
+        int iNumber = int.Parse(Console.ReadLine());
+        //int iNumber = 5;
+        Console.Write("Please, enter bit position:");
+        int bBitNumber = int.Parse(Console.ReadLine());
+        byte value = 1;      
+        int newNumber = (iNumber >> bBitNumber) & 1;
+        bool checkNumber = (newNumber == 0);
+        if (checkNumber)
+        {
+            value = 0;
+        }
+        else
+        {
+            value = 1;
+        }
+        Console.WriteLine(!checkNumber);
+        Console.WriteLine(Convert.ToString(iNumber, 2).PadLeft(16, '0'));
+        Console.WriteLine("The value of the bit #{0} is {1}", bBitNumber, value);
+    }
+}
