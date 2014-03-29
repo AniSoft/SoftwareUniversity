@@ -1,0 +1,28 @@
+//Problem 1.	Exchange If Greater
+//Write an if-statement that takes two integer variables a and b and exchanges their values if the first one is greater than the second one. As a result print the values a and b, separated by a space. Examples:
+
+using System;
+
+class ExchangeIfGreater
+{
+    static void Main()
+    {
+        Console.Write("Please, enter a:");
+        double a = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter b:");
+        double b = double.Parse(Console.ReadLine());
+        if (a > b)
+        {
+            Console.WriteLine("Exchange needed:{0} <===> {1}",a,b);
+            double greaterNumber = a;
+            a=b;
+            b=greaterNumber;
+            Console.WriteLine(a + " " + b);
+        }
+        else
+        {
+            Console.WriteLine("No Exchange needed:{0} <===> {1}",a,b);
+            Console.WriteLine(a + " " + b);
+        }       
+    }
+}
