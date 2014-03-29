@@ -1,0 +1,47 @@
+//Write a program that finds the biggest of five numbers by using only five if statements. 
+
+using System;
+
+class TheBiggestOfFiveNumbers
+{
+    static void Main()
+    {
+        Console.Write("Please, enter a:");
+        double a = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter b:");
+        double b = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter c:");
+        double c = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter d:");
+        double d = double.Parse(Console.ReadLine());
+        Console.Write("Please, enter e:");
+        double e = double.Parse(Console.ReadLine());
+        double biggestNumber;
+
+        if (a > b && a > c && a > d && a > e)
+        {
+            biggestNumber = a;
+            Console.WriteLine("The biggest number from {0} , {1} and {2} is {3}.", a, b, c, biggestNumber);
+        }
+        else if (b > a && b > c && b > d && b > e)
+        {
+            biggestNumber = b;
+            Console.WriteLine("The biggest number from {0} , {1} and {2} is {3}.", a, b, c, biggestNumber);
+        }
+        else if (c > a && c > b && c > d && c > e)
+        {
+            biggestNumber = c;
+            Console.WriteLine("The biggest number from {0} , {1} and {2} is {3}.", a, b, c, biggestNumber);
+        }
+        else if (d > a && d > b && d > c && d > e)
+        {
+            biggestNumber = d;
+            Console.WriteLine("The biggest number from {0} , {1} and {2} is {3}.", a, b, c, biggestNumber);
+        }
+        else
+        {
+            biggestNumber = e;
+            Console.WriteLine("The biggest number from {0} , {1} and {2} is {3}.", a, b, c, biggestNumber);
+        }
+    }
+}
