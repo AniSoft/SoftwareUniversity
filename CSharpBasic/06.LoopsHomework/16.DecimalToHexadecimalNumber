@@ -1,0 +1,18 @@
+//Problem 16.	Decimal to Hexadecimal Number
+//Using loops write a program that converts an integer number to its hexadecimal representation. The input is entered as long. The output should be a variable of type 
+//string. Do not use the built-in .NET functionality. Examples:
+
+using System;
+using System.Globalization;
+
+class DecimalToHexadecimalNumber
+{
+    static void Main()
+    {
+        Console.Write("Enter Decimal number: ");
+        long decimalNumber = long.Parse(Console.ReadLine());
+        string hexString=decimalNumber.ToString("X");
+        long hexNumber = long.Parse(hexString,NumberStyles.HexNumber);
+        Console.WriteLine(hexString);
+    }
+}
