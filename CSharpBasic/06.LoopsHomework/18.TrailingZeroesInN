@@ -1,0 +1,30 @@
+//Problem 18.	* Trailing Zeroes in N!
+//Write a program that calculates with how many zeroes the factorial of a given number n has at its end. Your program should work well for very big numbers, e.g. n=100000.
+
+using System;
+using System.Numerics;
+class TrailingZeroesInN
+{
+    static void Main()
+    {
+        Console.Write("Enter a positive integer number N: ");
+        int n = int.Parse(Console.ReadLine());
+        BigInteger factorial = 1;
+        Console.WriteLine();
+        BigInteger trailingZeroes = 0;
+        int sum = 5; 
+
+        for (int i = 1; i <= n; i++)
+        {
+            factorial *= i;
+        }
+        Console.WriteLine(factorial);
+
+        while (n >= sum)
+        {
+            trailingZeroes += (n / sum);
+            sum *= 5;
+        }
+        Console.WriteLine("The number of the trailing zeroes at the end of ({0}!) is: {1}\n", n, trailingZeroes);
+    }
+}
