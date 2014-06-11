@@ -1,3 +1,5 @@
+//http://judge.softuni.bg/Contests/14/Java-Basics-Exam-1-June-2014
+
 import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Scanner;
