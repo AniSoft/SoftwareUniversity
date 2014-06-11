@@ -1,3 +1,5 @@
+//http://judge.softuni.bg/Contests/13/Java-Basics-Exam-27-May-2014
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
