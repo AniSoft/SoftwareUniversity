@@ -1,0 +1,158 @@
+	
+
+    <h1></h1>-заглавие(heading) – когато напишем този таг HTML знае, че това е заглавие(т.е. говорим за семантика на кода)
+     
+    <em> </em> -italic текст, който е важен
+     
+    <b> </b> - bold текст
+     
+    <p> </p> - параграф
+     
+    <strong> </strong> bold текст, който е е важен
+     
+    <small> </small> - по-малък текст
+     
+    <!- -... - -> - коментар
+     
+    <br/  > - нов ред
+     
+    <ul type=”disc/circle/square”>-unordered list
+            <li>сепия</li>-list item
+            <li>риба</li>
+            <li>крил</li>
+    </ul>                   -неподреден списък
+     
+    <ol type = “1”>-ordered list
+            <li>сепия</li>
+            <li>риба</li>
+    </ol>                   -подреден списък
+     
+    <dl>-definition list
+            <dt>нещо отляво за дефиниране</dt> <dd>дефиниция </dd>
+            <dt> нещо отляво за дефиниране </dt> <dd> дефиниция </dd>
+    </dl>
+     
+    <hr> </hr> - хоризонтална линия
+     
+    Атрибут-седи в отварящия таг и придава някакъв стил на тага
+     
+    <a …></a>-създава се хиперлинк
+     
+    !!!!! a не е самозатварящ се таг!!!
+     
+    (атрибут на a) href =”http…”- хиперлинк
+     
+    Атрибут-title=”текст”-когато поставяш мишката върху линк се появява надпис
+     
+    Атрибут-target =”_blank”-когато натиснеш върху линкa се отваря друг подпрозорец
+     
+    Може да сложим картинка в хиперлинк и така тя да стане част от хиперлинка. Това става по следния начин:
+     
+    <a href=”http…”>Nakov’s web site”<img src=”...”/></a>
+     
+    Атрибут – alt =“...“-появява се когато browser-а не може или не иска да зареди картинката(в Chrome може и да не стане, но в Opera става)
+     
+    Атрибут -  bgcolor = “…”-задава цвета на фона,поставя се в отварящия таг на body-то
+     
+    <font color=”red”>променяме цвета на текста</font>
+     
+    <big></big>-прави текста леко по-голям и по-одебелен
+     
+    <sub ></sub>-текстът отива по-надолу(примерно за номера на хим. елементи)
+     
+    <sup></sup>-текстът отива по-отгоре(примерно за степени)
+     
+    <ins></ins>-подчертава текста
+     
+    <del></del>-задрасква текста
+     
+    <pre></pre>(pre-ordered text)-както сме написали текста, в редактора така излиза в browser-а
+     
+    Gif-подходящ за картинки с малко цветове, има около 256 цвята, обикновено по-малък от jpeg
+     
+    Jpeg-подходящ за фотографии и картини с много цветове, има много висока резолюция
+     
+    Png-взима най-доброто и от двете отгоре
+     
+    <img src=”име на картинката“ /> - слага картинка от моя компютър
+     
+    <img src=”адрес на картинка в интернет” />-слага картинка от интернет
+     
+    За да сменим фона пишем атрибутa –style= “background:red;” -css
+     
+    Атрибут - align = “left/right/center” – позиционираме дадена картинка
+     
+    <font  (атрибут) face=”arial/verdana…”-задава шрифта на текста
+     
+    Атрибут size =”+3/-5/7”
+     
+    Атрибут style=”font-family: arial/ verdana; color=#3399FF; font-size=30px/30%”
+     
+    <img />-самозатварящ се таг (защото картинката няма съдържание-тези тагове са самозатварящи се)
+     
+    &nbsp; - интервал
+     
+    Атрибут text=”blue color for example” всеки текст, който не е моделиран в body-то става син
+     
+    link=”green color for example” –непосетените линкове се оцветяват в зелено
+     
+    vlink=”red color for example”- посетените линкове се оцветяват в червено
+     
+    <center></center>-всичко между този таг се центрира
+     
+    Моделиране на хоризонталната линия:
+    <hr size =”5px” width=”20px” align=”left/right/center” noshade>
+     
+    <table></table>
+     
+    <tr></tr>-create a table row
+     
+    Таблиците се ползват когато имат семантично значение, т.е. например имаме таблица с продукти и цени. Не се изшползва като начин за изобразяване/рисуване
+     
+    Two kinds of cells in HTML tables:
+    Data cells - <td></td>-create tabular data(cell)-hold the table data
+    Header cells - <th></th>-table head-семантиката на това нещо казва, че съответната колона е heading колона – hold the column names
+     
+    <thead></thead>- така казваме, че това ни е header-а
+     
+    <tbody></tobody>-казва това ми е body-то
+     
+    <tfoot></tofoot>-казва това е foot-ърът
+     
+    Атрибут-border=”1”-поставя граници между клетките
+     
+    Cellspacing-празното разстояние между клетките
+     
+    Cellpading- разстоянието между съдържанието на клетките и техния кунтур(border)
+     
+    Cellspacing и Cellpading са атрибути, които се пишат в <table...>-а
+     
+    Table rows split into several semantic sections:
+    <thead>-denotes the table header
+            -constains <th> elements, instead of <td>
+    <tbody>-denotes collection of table rows holding table data
+    <tfoot>-denotes table footer
+    <colgroup> and <col>-define columns
+            -used to assign column widths
+     
+    Colspan-съединява 2 клетки
+    Rowspan-съединява 2 реда
+    Използване на Colspan и Rowspan:
+    <table cellspacing="0">
+                    <tr class="row1">
+                            <td>Cell[1,1]</td>
+                            <td colspan="2">Cell[2,1]</td>
+                    </tr>
+                   
+                    <tr class="row2">
+                            <td>Cell[1,2]</td>
+                            <td rowspan="2">Cell[2,2]</td>
+                            <td>Cell[3,2]</td>
+                    </tr>
+                   
+                    <tr class="row3">
+                            <td>Cell[1,3]</td>
+                            <td>Cell[2,3]</td>
+                    </tr>
+            </table>
+
