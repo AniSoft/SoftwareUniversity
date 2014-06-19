@@ -1,0 +1,39 @@
+//Create array with BigDecimal numbers,sorting them and finding
+//the three biggest or the three smallest numbers
+import java.math.BigDecimal;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class _01_02_BigDesimal_3Biggest_3Smallest {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();
+
+		BigDecimal[] array = new BigDecimal[n];
+
+		// cycle for reading the numbers
+		for (int i = 0; i < array.length; i++) {
+			array[i] = input.nextBigDecimal();
+		}
+
+		// cycle for printing the numbers and sorting them from the smallest to
+		// the biggest
+		for (int i = array.length - 1; i >= 0; i--) {
+			Arrays.sort(array);
+			System.out.println(array[i]);
+		}
+
+		System.out.println("The three smallest numbers are: ");
+		// cycle for printing the three smallest numbers in an array
+		for (int j = 0; j < 3; j++) {
+			System.out.println(array[j]);
+		}
+
+		System.out.println("The three biggest numbers are: ");
+		//cycle for printing the three biggest numbers in an array
+		for (int k = array.length - 1; k >array.length - 4; k--) {
+			System.out.println(array[k]);
+		}
+	}
+}
