@@ -1,0 +1,45 @@
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class _2014_06_01_03_SimpleExpression_Variant {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		String userInput = scan.nextLine();
+
+		Pattern digitRegex = Pattern.compile("[\\d\\.]+");
+		Matcher digitMatch = digitRegex.matcher(userInput);
+
+		ArrayList<String> numbers = new ArrayList<>();
+		ArrayList<String> operants = new ArrayList<>();
+
+		while (digitMatch.find()) {
+			numbers.add(digitMatch.group());
+		}
+
+		Pattern operantsRegex = Pattern.compile("[+-]+");
+		Matcher operantsMatch = operantsRegex.matcher(userInput);
+
+		while (operantsMatch.find()) {
+			operants.add(operantsMatch.group());
+		}
+
+		BigDecimal sum = new BigDecimal(numbers.get(0));
+		for (int i = 0; i < operants.size(); i++) {
+			if (operants.get(i).equals("+")) {
+				sum = sum.add(new BigDecimal(numbers.get(i + 1)));
+			}
+			if (operants.get(i).equals("-")) {
+				sum = sum.subtract(new BigDecimal(numbers.get(i + 1)));
+			}
+		}
+
+		System.out.println(sum);
+
+	}
+
+}
