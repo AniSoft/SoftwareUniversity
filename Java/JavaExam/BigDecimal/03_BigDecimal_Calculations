@@ -1,0 +1,29 @@
+import java.math.BigDecimal;
+
+public class 03_BigDecimal_Calculations {
+
+	public static void main(String[] args) {
+		BigDecimal decimalA=new BigDecimal("5555555555555.10");
+		BigDecimal decimalB=new BigDecimal("10");
+		
+		decimalA=decimalA.add(decimalB);
+		System.out.println("result= "+decimalA);
+		
+		decimalA=decimalA.multiply(decimalB);
+		System.out.println("result= "+decimalA);
+		
+		decimalA=decimalA.subtract(decimalB);
+		System.out.println("result= "+decimalA);
+		
+		decimalA=decimalA.divide(decimalB);
+		System.out.println("result= "+decimalA);
+		
+		decimalA=decimalA.pow(2);
+		System.out.println("result= "+decimalA);
+		
+		decimalA=decimalA.negate();
+		System.out.println("result= "+decimalA);
+
+	}
+
+}
