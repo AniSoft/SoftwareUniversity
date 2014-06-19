@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class _01_02_BigDesimal_3Biggest_3Smallest {
+public class 02_BigDesimal_3Biggest_3Smallest {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
