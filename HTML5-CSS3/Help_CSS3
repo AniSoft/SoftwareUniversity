@@ -1,0 +1,43 @@
+	
+
+    CSS(Cascading Style Sheets)
+    <style type = “text/css”>
+     
+    </style>                -това всичкото се нарича style sheet
+     
+    Ако искаме да променим даден параграф пишем първо името на елемента:
+    например -> p,h2,strong…
+    В израза p{color:blue;}
+    p-selector(the element we want to change)
+    color-property (what we want to change about it)
+    blue-value(what we want to change it to)
+    line-height:150%;-получава се повече място между редовете
+    font-weight-колко е дебел шрифта
+    font-style:italic;-italicizes the text
+    text-align:left/center/right/justified;
+    за да променим цвета на текста, както и да променим фона на страницата трябва да access-нем body-то
+    слагане на картинка за фон- background-image:url(kvobe.jpg);-така картинката се повтаря
+    картинка за background:
+    със background-repeat:no-repeat; картинката не се повтаря, а излиза само веднъж
+    background-repeat:repeat-x;-отляво надясно горе
+    background-repeat:repeat-y;-отгоре надолу отляво
+    background-position:10px 60px;- за подравняване на картинка когато е само една
+    10 px-казват на какво разстояние отляво
+    60 px-казват на какво разстояние отдясно
+     
+    Padding-разстоянието от самия текст до border-а
+    padding:10px;
+    когато искаме да сме много точни с поставянето на елементи някъде по страницата използваме padding-top/bottom/left/right:20px;
+    Borders:
+    Border-color:blue;
+    Border-width:3px;-колко е дебела границата
+    Border-style:dashed,dotted…;-стил на границата
+    Border-top/bottom/left/right-color:blue;-установява цвета само на горната граница
+    Border-top/bottom/left/right-style:dashed,dotted…;
+    Margin-всичко това, което обгражда елемента. With other words-space around the elements
+    margin-top/bottom/left/right:50px;
+    !By default the browser sets the height of the element equal to the height of the text, and sets the width of the element equal to the width of the website
+    Можем да направим следното за да спестим писане на код:
+    Border: 3px solid black;
+    !попринцип като имаме property-та като style,color.. за даден елемент има пряк път да направим стилизация по кратък начин
+
