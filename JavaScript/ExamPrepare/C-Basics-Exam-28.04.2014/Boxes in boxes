@@ -1,0 +1,42 @@
+
+function Solve() {
+    var w1 = parseInt(arguments[0]);
+    var h1 = parseInt(arguments[1]);
+    var d1 = parseInt(arguments[2]);
+ 
+    var w2 = parseInt(arguments[3]);
+    var h2 = parseInt(arguments[4]);
+    var d2 = parseInt(arguments[5]);
+ 
+    //check if the first fits in the second
+    checkBoxes(w1, h1, d1, w2, h2, d2);
+    checkBoxes(w1, h1, d1, w2, d2, h2);
+    checkBoxes(w1, h1, d1, h2, w2, d2);
+    checkBoxes(w1, h1, d1, h2, d2, w2);
+    checkBoxes(w1, h1, d1, d2, w2, h2);
+    checkBoxes(w1, h1, d1, d2, h2, w2);
+ 
+    //check if the second fits in the first
+   
+    checkBoxes(w2, h2, d2, w1, h1, d1);
+    checkBoxes(w2, h2, d2, w1, d1, h1);
+    checkBoxes(w2, h2, d2, h1, w1, d1);
+    checkBoxes(w2, h2, d2, h1, d1, w1);
+    checkBoxes(w2, h2, d2, d1, w1, h1);
+    checkBoxes(w2, h2, d2, d1, h1, w1);
+ 
+    function sprintf(format, etc) {
+        var arg = arguments;
+        var i = 1;
+        return format.replace(/%((%)|s|d)/g, function (m) { return m[2] || arg[i++] })
+    }
+ 
+    function checkBoxes(w1, h1, d1, w2, h2, d2) {
+        if (w1 < w2 && h1 < h2 && d1 < d2) {
+           console.log(sprintf('(%d, %d, %d) < (%d, %d, %d)', w1, h1, d1, w2, h2, d2));
+        }
+    }
+}
+ 
+Solve(9, 6, 2, 5, 1, 7);
+
