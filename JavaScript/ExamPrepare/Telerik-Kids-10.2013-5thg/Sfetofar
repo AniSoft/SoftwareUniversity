@@ -1,0 +1,30 @@
+function Solve(args) {
+    var n = parseInt(args);
+ 
+    var states = ['r', 'y', 'g', 'y', 'r'];
+ 
+    var counter = 0, red = 0, yellow = 0, green = 0;
+ 
+    while (true) {
+        var currChar = states[counter];
+        if (currChar == 'r') {
+            red++;
+        }
+        else if (currChar == 'y') {
+            yellow++;
+        }
+        else {
+            green++;
+        }
+        n--;
+        if (n == -1) {
+            break;
+        }
+        counter++;
+        if (counter > 4) {
+            counter = 1;
+        }
+    }
+    console.log(yellow + " " + red + " " + green);
+}
+
