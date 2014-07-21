@@ -1,0 +1,32 @@
+function Solve(args) {
+    var container = args[0].split(' ');
+    var arr = [];
+    var maxDiff = 0;
+    var areEqual = true;
+ 
+    for (var i = 0; i < container.length; i++) {
+        arr[i] = parseInt(container[i]);
+    }
+ 
+    var initPair = arr[0] + arr[1];
+ 
+    for (var j = 2; j < arr.length-1; j+=2) {
+        if (arr[j] + arr[j+1] != initPair) {
+            areEqual = false;
+            var diff = Math.abs((arr[j] + arr[j+1]) - initPair);
+            if (diff > maxDiff) {
+                maxDiff = diff;
+               
+            }
+            initPair = arr[j] + arr[j + 1];
+        }
+    }
+    if (areEqual) {
+        console.log("Yes, value=" + initPair);
+    }
+    else {
+        console.log("No, maxdiff=" + maxDiff);
+    }
+}
+Solve("-1 0 0 -1");
+
