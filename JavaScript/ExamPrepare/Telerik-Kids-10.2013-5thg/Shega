@@ -1,0 +1,11 @@
+function Solve(args) {
+    var LITERS_PER_GAL = 3;
+    var MILILIT_PER_GAL = 785;
+   
+    var gallons = parseInt(args);
+    console.log((gallons * LITERS_PER_GAL + Math.floor(((MILILIT_PER_GAL * gallons) / 1000))) + " " +
+                        (MILILIT_PER_GAL * gallons) % 1000);
+}
+ 
+Solve("5");
+
