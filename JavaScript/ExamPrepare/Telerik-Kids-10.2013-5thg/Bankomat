@@ -1,0 +1,12 @@
+function Solve(args) {
+    var input = args[0].split(' ');
+ 
+    var student = parseInt(input[0]);
+    var perBox = parseInt(input[1]);
+    var cost = parseFloat(input[2]);
+ 
+    var ofBoxes = ((student + 1) / perBox).toFixed(0);
+ 
+    console.log(Math.ceil((ofBoxes * cost) / 10) * 10);
+}
+
