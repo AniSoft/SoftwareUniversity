@@ -1,0 +1,110 @@
+SUBLIME TEXT ShortCuts
+**********************
+
+Ctrl+C copy current line (if no selection)
+
+Ctrl+X cut current line (if no selection)
+
+Ctrl+⇧+K delete line
+
+Ctrl+↩ insert line after
+
+Ctrl+⇧+↩ insert line before
+
+Ctrl+⇧+↑ move line (or selection) up
+
+Ctrl+L select line (repeat to select next lines)
+
+Ctrl+D select word (repeat select others occurrences in context for multiple editing)
+
+Ctrl+M jump to closing bracket for current code, repeat to jump to opening bracket
+
+Ctrl+⇧+M select all contents of the current brackets (curly brackets, square brackets, parentheses)
+
+Ctrl+KK delete from cursor to end of line
+
+Ctrl+K+⌫ delete from cursor to start of line
+
+Ctrl+ transpose (switch characters surrou­nding cursor)
+
+Ctrl+ increase font size
+
+Ctrl- decrease font size
+
+Ctrl+] indent current line(s)
+
+Ctrl+[ un-indent current line(s)
+
+Ctrl+⇧+D duplicate line(s)
+
+Ctrl+J join line below to the end of the current line
+
+Ctrl+/ comment/un-comment current line
+
+Ctrl+⇧+/ block comment current selection
+
+Ctrl+Y redo, or repeat last keyboard shortcut command
+
+Ctrl+⇧+V paste and indent correctly
+
+Ctrl+Space select next auto-complete suggestion
+
+Ctrl+U soft undo (somehow undoes your movements; it jumps to your last change before undoing it when you repeat this command)
+
+Ctrl+P quick-open files by name in your project (doesn’t seem to need an actual project set up, it just searches in the directories around the currently-opened file
+
+Ctrl+R goto symbol (functions and classes) in the file. Same as Ctrl+P, then type @
+
+Ctrl+; goto word in current file. Same as Ctrl+P, then type #
+
+Ctrl+G goto line in current file. Same as Ctrl+P, then type :
+
+Ctrl+⇧+P command prompt
+
+Ctrl+KB toggle side bar
+
+Ctrl+F find
+
+Ctrl+H replace
+
+Ctrl+⇧+F find in files
+
+Ctrl+⇧+t open last closed tab (just like in your browser)
+
+Ctrl+PgDn cycle down through open tabs, cycle up with Ctrl+PgUp
+
+Ctrl+⇆ cycle through last tabs (repeat to go back further in history)
+
+Ctrl+F2 toggle bookmark
+
+F2 next bookmark
+
+⇧+F2 previous bookmark
+
+Ctrl+⇧+F2 clear bookmarks
+
+Ctrl+KU upper case
+
+Ctrl+KL lower case
+
+Ctrl+⇧+L multiple-line cursor at the end of the lines (if 2 or more rows are selected)
+
+Ctrl + D finds next occurence of current word for multiple editing.
+
+Alt + F3 select all occurrences of current word for multiple editing.
+
+Ctrl + K, Space Set mark
+
+Ctrl + K + A Select to mark
+
+Ctrl + K + W Delete to mark
+
+Ctrl + K + X Swap with mark
+
+Ctrl + K + Y Yank
+
+Ctrl + F9 sort selected lines aplhabetically (if no lines are selected, it sorts all lines in the current document)
+
+F11 full-screen
+
+Shift + F11 distraction-free mode
