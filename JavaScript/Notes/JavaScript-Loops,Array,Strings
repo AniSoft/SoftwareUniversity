@@ -1,0 +1,96 @@
+В JavaScript има 4 вида цикли:
+1.while loop:
+While(condition) {
+        Statements;
+}
+5,”non-empty” are evaluated as true
+0,”” are evaluated as false
+ 
+2.do while loop:
+Do{
+        Statements;
+}while(condition);
+ 
+3.for loop:
+for (var i = 0; i < 10; i++) {
+        …
+}
+!!! i += 1 е малко по-бързо от i++
+!!!можем да имаме повече от един брояч
+ 
+4.for-in loop-итерира по свойствата (ключовете )на обектите, и по индексите на масивите:
+var arr = [10, 20, 30, 40, 50];
+for (var index in arr) {
+console.log(arr[index])
+}
+Iterating over the properties of an object:
+var obj = { name: 'Steve', age: 23, location: 'Sofia' };
+for (var key in obj) {
+console.log(obj[key]);
+}
+// Steve, 23 , Sofia
+ 
+Arrays
+Създаване на масив:
+var numbers=[1,2,3,4,5];
+Елементите на масивите не е задължително да са от един и същи тип!
+ 
+Using new Array(initialLength):
+         var arr = new Array(10); // [undefined × 10]
+методи при масивите:
+array.unshift(element)- inserts a new element at the beginning of the array
+array.push(element)-appends a new element at the end
+array.shift()-removes and returns the element at the beginning of the array
+array.pop()-removes and returns the last element
+ 
+сортиране на масив
+var numbers = [5, 4, 23, 2];
+numbers.sort(function(a, b) {
+    return a > b;
+});
+console.log(numbers.join(', ')); // returns 2, 4, 5, 23
+ 
+array.reverse()-връща нов масив с елементите в обратен ред
+arr.slice(start,end-1)-връща елементите на масива от start позиция до end позиция
+array.concat(elements)-прилепя елементи в края на масива
+array.join(separator)-прилепя елементите на масива с конкретен елемент
+ 
+        array.filter(function(item){ return true / false })
+        Returns a new array with the elements that satisfy condition
+       
+        array.forEach(function(item){ … })
+        Iterates through the array and executes the function for each item
+ 
+        array.indexOf(element)
+        Returns the index of the first match in the array
+        Returns -1 if the element is not found
+ 
+        array.lastIndexOf(element)
+        Returns the index of the first match in the array from right to left or -1 (not found)
+ 
+Асоциативнни масиви:
+     Associative arrays are arrays indexed by keys, not  by the numbers 0, 1, 2, 3, …
+ 
+     Initializing an associative array (object):
+var prices = { 'orange' : 2.30, 'apple' : 1.50, 'tomato' : 3.80 };
+     Taking the keys of object / array:
+ 
+var prices = { 'orange' : 2.30, 'apple' : 1.50, 'tomato' : 3.80 };
+console.log(Object.keys(prices)); // ["orange", "apple", "tomato"]
+ 
+var nums = [10, 20, 30];
+console.log(Object.keys(nums)); // ["0", "1", "2"]
+ 
+в JavaScript обектите са напрактика асоциативни масиви, но с тази разлика, че обектите нямат дължина
+ 
+Strings
+ 
+String.search(regex(регулярен израз))—спрямо регулярния израз получаваме началние индекс на 1вото срещане на string-а ,който търсим
+ 
+Конкатенацията е бърз процес в JavaScript
+ 
+!когато пишем в HTML ако искаме да напишем даден таг без да искаме да се рендира трябва да escape-ваме самите символи
+ 
+Conversion from primitive to object type:
+     new String('…') creates a string object
+     String(strObject) creates a primitive string
