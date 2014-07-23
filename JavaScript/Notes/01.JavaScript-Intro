@@ -36,3 +36,4 @@ var answer=confirm("Do you want to continue");-излиза прозорче, к
 var name=prompt("What is your name?");-показва се прозорче, в което въвеждаме дадена информация
  
 document.body.style.background=color(цвят записан в 16-тична бройна система);-така променяме фона на дадена страница
+
