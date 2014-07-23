@@ -27,3 +27,4 @@ function Solve(args) {
 console.log(Solve([1, 1, 1, 4]));
 console.log(Solve([2, 3, 4, 10]));
 console.log(Solve([5, -1, 2, 33]));
+
