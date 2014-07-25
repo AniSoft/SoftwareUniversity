@@ -1,3 +1,4 @@
+//http://judge.softuni.bg/Contests/Practice/Index/16#0
 function Solve(input) {
     //we get the input and split to array of words
     var words = input[0].split(' ');
