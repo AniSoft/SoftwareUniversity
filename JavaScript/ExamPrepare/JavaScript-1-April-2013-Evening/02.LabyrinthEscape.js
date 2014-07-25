@@ -87,3 +87,4 @@ console.log(Solve([
 	"urrrldud",
 	"ulllllll"
 ]));
+
