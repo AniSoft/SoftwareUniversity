@@ -1,3 +1,4 @@
+//http://judge.softuni.bg/Contests/Practice/Index/16#0
 function solve(input) {
     //we get the input and split to array of numbers
     var nums = input[0].split(/[ ()]+/);
