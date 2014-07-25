@@ -1,3 +1,4 @@
+//http://judge.softuni.bg/Contests/Practice/Index/16#0
 function Solve (input){
     var n = input[0];
     var assarr = {};
