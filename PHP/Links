@@ -1,10 +1,12 @@
 PHP
+*****************************************
 http://php.net
 http://www.phpbench.com/
 http://bg.phptherightway.com/ 
 http://www.smashingmagazine.com/2011/10/17/getting-started-with-php-templating/
 
 PHP-online
+*****************************************
 http://phpfiddle.org/
 
 
@@ -13,26 +15,32 @@ Regex
 http://www.regexr.com/
 http://regex101.com/
 
+Unix Time Stamp
+*****************************************
+http://www.unixtimestamp.com/index.php
+
 PHP IDE
 ***************
 XAMPP/LAMP
 
 PhpStorm
+*****************************************
 http://www.phpstorm-themes.com/themes-list?page=1
 https://softuni.bg/forum/questions/details/1817
 
 AptanaStudio/Eclipse
+*****************************************
 http://www.aptana.com/
 http://tsvetanovah.wordpress.com/2014/08/18/xdebug-for-aptana-studio-3/
 
 http://www.eclipse.org/pdt/
 
 Netbeans
-
+*****************************************
 http://www.telerik.com/fiddler
 
 Lessons
-
+*****************************************
 http://svn.softuni.org/admin/
 
 https://softuni.bg/trainings/fasttracks/details/1033
@@ -43,11 +51,12 @@ http://www.developphp.com/view.php?tid=1185
 https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
 
 Cast на String
-
+*****************************************
 http://nau4i.me/jupgrade/index.php/php2/8-php--/62-----strings
 
 
 OTHER
+*****************************************
 Install Telnet for Windows8
 http://www.sysprobs.com/install-and-enable-telnet-in-windows-8-use-as-telnet-client
 
