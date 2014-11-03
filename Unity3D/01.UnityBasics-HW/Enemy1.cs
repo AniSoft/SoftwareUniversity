@@ -1,4 +1,4 @@
-// https://anisoftblog.wordpress.com/category/unity3d/unitybasics/
+//https://anisoftblog.wordpress.com/unity3d/
 using UnityEngine;
 using System.Collections;
 
