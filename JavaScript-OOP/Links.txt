@@ -21,3 +21,5 @@ http://www.webplatform.org/
 
 https://developer.mozilla.org
 
+Revealing pattern
+http://weblogs.asp.net/dwahlin/techniques-strategies-and-patterns-for-structuring-javascript-code-revealing-prototype-pattern
