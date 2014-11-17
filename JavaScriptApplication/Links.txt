@@ -1,2 +1,10 @@
 JQuery
 http://jquery.com/
+
+
+Prototype
+http://prototypejs.org/
+
+
+Kendo UI
+http://www.telerik.com/kendo-ui
