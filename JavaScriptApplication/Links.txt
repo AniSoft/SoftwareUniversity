@@ -1,3 +1,7 @@
+Lection
+http://academy.telerik.com/school-academy/season-2013-2014/javascript-dom-and-ui
+http://academy.telerik.com/school-academy/season-2013-2014/javascript-applications
+
 JQuery
 http://jquery.com/
 
@@ -8,3 +12,6 @@ http://prototypejs.org/
 
 Kendo UI
 http://www.telerik.com/kendo-ui
+
+
+
