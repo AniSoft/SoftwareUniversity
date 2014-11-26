@@ -1,0 +1,7 @@
+Linux Books
+The Linux Network Administration Guide - http://www.tldp.org/LDP/nag2/
+The Linux System Administration Guide - http://www.tldp.org/LDP/sag/sag.pdf
+The Linux Documentation Project - http://www.tldp.org/LDP/.
+
+Linux Tips
+http://crions.no-ip.com/ltips/?p=140
